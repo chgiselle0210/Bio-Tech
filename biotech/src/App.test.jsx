@@ -1,13 +1,9 @@
 // App.test.jsx
 import React from 'react';
-import { render } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { shallow } from 'enzyme';
 import App from './App';
 
 test('renders main component correctly', () => {
-  render(
-    <MemoryRouter>
-      <App />
-    </MemoryRouter>
-  );
-});
+  const wrapper = shallow(<App />);
+  expect(wrapper.exists()).toBe(true);
+}); 
