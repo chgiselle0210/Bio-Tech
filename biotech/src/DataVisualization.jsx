@@ -27,7 +27,7 @@ const DataVisualization = () => {
 
     fetchData();
   }, []); // Se ejecuta solo una vez al montar el componente
-
+//al interactuar con la API de Google Sheets, espero recibir una respuesta que contenga los datos que necesito de mi hoja de cálculo. Esta respuesta generalmente consistirá en datos estructurados que reflejen la información almacenada en la hoja de cálculo consultada. Por ejemplo, si estoy solicitando información sobre ventas, esperaría recibir una lista de objetos donde cada uno representa una venta y contiene detalles como el nombre del producto vendido, la cantidad, el precio, etc.
   return (
     <div className="data-visualization">
       <h2>Visualización de Datos Genómicos</h2>
